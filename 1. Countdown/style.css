@@ -1,0 +1,78 @@
+:root {
+    --bg-clr: linear-gradient(to top, #002223, #004743);
+    --theme-clr: #f4ae48;
+    --red-clr: #e21736;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #002223;
+    background-image: var(--bg-clr);
+    overflow-x: hidden;
+    background-color: #222;
+    font-family: sans-serif;
+    line-height: 0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    left: -100rem;
+}
+h2, h3 {
+    text-shadow: 10px 10px 10px #000;
+}
+
+img {
+    max-width: 100%;
+}
+    .present-img img {
+        filter: drop-shadow(20px 20px 20px #000);
+        animation: shake 4s ease-in-out 2s infinite backwards;
+    }
+    @keyframes shake {
+        5% {
+            transform: translateY(-.75rem) rotateZ(-2deg);
+        }
+        10% {
+            transform: translateY(0) rotateZ(0);
+        }
+        15% {
+            transform: translateY(-.75rem) rotateZ(2deg);
+        }
+        20% {
+            transform: translateY(0) rotateZ(0);
+        }
+    }
+    #xmasBall {
+        position: absolute;
+        transform: rotate(-30deg);
+        top: 2rem;
+        left: -5rem;
+        max-width: 50%;
+        z-index: -1;
+    }
+
+.app {
+    max-width: 50rem;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, .2);
+    backdrop-filter: blur(7px);
+    margin: 8rem auto 0;
+    display: grid;
+    place-items: center right;
+    grid-template-columns: 1fr 1fr;
+    text-align: right;
+    color: var(--theme-clr);
+    font-size: 3rem;
+    box-shadow: 0 0 10px 2px #000;
+}
+    #days {
+        font-size: 8rem;
+        color: var(--red-clr);
+    }

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
+
+:root {
+    --wine-red: #C7375F;
+    --bright-red: #D42D2F;
+    --dark-green: #344D2F;
+    --light-green: #77A047;
+    --gold: #FAC57D;
+    --snow: #F0F4F7;
+  }
+  
+  html, body {
+      margin: 0;
+      padding: 0;
+  }
+  
+  body,
+  .container {
+      display: flex;
+      justify-content: center;
+      align-items: center
+  }
+  
+  body {
+      background-color: var(--light-green);
+      height: 100vh;
+      transition: background-color 0.5s ease;
+  }
+    body.bg {
+        animation: bgClr 2s ease-in-out forwards;
+    }
+        @keyframes bgClr {
+            to {
+                background-color: var(--gold);
+            }
+        }
+  
+  .container {
+      background: var(--snow);
+      flex-direction: column;
+      border-radius: 10px;
+      padding: 1em;
+      width: 50rem;
+      height: 20rem;
+      overflow: hidden;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      font-size: 45px;
+      font-family: 'Rubik Beastly', cursive;
+      color: var(--bright-red)
+  }
+  
+  button {
+      padding: 1em 2em;
+      border: none;
+      font-size: 20px;
+      background-color: var(--bright-red);
+      color: var(--snow);
+      border-radius: 999px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
+  
+  button:hover {
+      cursor: pointer;
+      background-color: var(--wine-red);
+  }
+  
+  #greeting {
+      margin: 1.5rem;
+      line-height: 2;
+      font-size: 4rem;
+      transition: all ease-out;
+  }
+    #greeting.animate {
+        animation: animate 4s ease-out;
+    }
+
+  @keyframes animate {
+      45% {
+          opacity: 0;
+          transform: scale(1.3);
+      }
+      55% {
+        opacity: 0;
+        transform: scale(1.3);
+      }
+  }  
