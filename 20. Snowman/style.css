@@ -7,6 +7,7 @@ html, body {
   --color: #99bbff;
   --color2: #000;
   --color3: #ffa500;
+  --color4: #3e71c3;
 }
 
 body {
@@ -102,4 +103,22 @@ input {
   background: darkgray;
   border-radius: 50%;
   margin: 2em 4em;
+}
+
+.hat {
+    transform: translateX(3rem) translateY(1rem) rotate(-5deg);
+}
+
+.hat-top {
+    width: 7rem;
+    height: 5rem;
+    background-color: var(--color4);
+    border-radius: 1rem 1rem 0 0;
+}
+
+.hat-base {
+    width: 13rem;
+    height: .75rem;
+    background-color: var(--color4);
+    transform: translateX(-3rem);
 }
