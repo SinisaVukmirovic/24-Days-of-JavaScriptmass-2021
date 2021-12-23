@@ -3,11 +3,14 @@
 const signElem = document.querySelector('#sign');
 const textInput = document.querySelector('#text-input');
 
-const santaMsg = (e) => {
-  if (textInput.value.length < 5) return;
+const alertElem = document.querySelector('.alert');
 
+const santaMsg = (e) => {
+  if (textInput.value.trim(' ').length < 5) return;
+  
   if(e.keyCode == 13) {
-    signElem.textContent = `🎅 ${textInput.value}! ☃️`;
+    // alertElem.textContent = '';
+    signElem.textContent = `🎅 ${textInput.value} ☃️`;
     resetInput();
   };
 }

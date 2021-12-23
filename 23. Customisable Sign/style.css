@@ -48,3 +48,8 @@
       font-size: 1.5rem;
   }
   
+  .alert {
+      margin-top: .25rem;
+      font-style: italic;
+      color: var(--snow);
+  }
