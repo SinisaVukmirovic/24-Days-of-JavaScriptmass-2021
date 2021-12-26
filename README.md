@@ -1,3 +1,3 @@
 ### JavaScriptmass 2021
 
-#### Scrimba's 23 Days of Javascriptmss challenges
+#### Scrimba's 24 Days of Javascriptmass challenges
